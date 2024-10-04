@@ -13,7 +13,7 @@ class AddressesDemoController < ApplicationController
   def update
     @address = Address.find(params[:id])
 
-    if @address.update_attributes(address_params)
+    if @address.update(address_params)
       redirect_to root_path, notice: "Updated address!"
     end
   end

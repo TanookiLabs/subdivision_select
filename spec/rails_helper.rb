@@ -5,7 +5,7 @@ require File.expand_path("../../spec/dummy/config/environment", __FILE__)
 require "rspec/rails"
 require "capybara/rails"
 require "capybara/rspec"
-require "factory_girl_rails"
+require "factory_bot_rails"
 require "rails-controller-testing"
 Rails::Controller::Testing.install
 
@@ -54,5 +54,5 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 end

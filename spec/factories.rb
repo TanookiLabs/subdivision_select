@@ -1,11 +1,11 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :address do
-    title "Blank Address"
+    title { "Blank Address" }
 
     factory :mass_address do
-      title "Massachusetts Address"
-      country "US"
-      subdivision "MA"
+      title { "Massachusetts Address" }
+      country { "US" }
+      subdivision { "MA" }
     end
   end
 end
